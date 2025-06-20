@@ -132,7 +132,7 @@
                 },
                 {
                     "name": "zDist",
-                    "ioValue": 0
+                    "ioValue": -5
                 }
             ],
             "description": "Moves a shape laterally in X, Y, Z."
@@ -151,6 +151,21 @@
             ],
             "description": "Changes the color of the shape.",
             "selectedColorIndex": 22
+        },
+        {
+            "atomType": "Equation",
+            "name": "-x /2",
+            "x": 0.47195622435020523,
+            "y": 0.7048192771084337,
+            "uniqueID": "cf4078dc-c37a-4aaa-be89-23fd3ad0d5fd",
+            "ioValues": [
+                {
+                    "name": "x",
+                    "ioValue": 10
+                }
+            ],
+            "description": "Defines a mathematical equation. Edit the output field to add or remove inputs.",
+            "currentEquation": "-x /2"
         }
     ],
     "allConnectors": [
@@ -167,6 +182,13 @@
             "ap2Primary": false,
             "ap1ID": "be99203a-9a51-4cae-893a-0e4f60162b78",
             "ap2ID": "14f9abf2-1845-4a68-9688-50852ce4441d"
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "x",
+            "ap2Primary": false,
+            "ap1ID": "be99203a-9a51-4cae-893a-0e4f60162b78",
+            "ap2ID": "cf4078dc-c37a-4aaa-be89-23fd3ad0d5fd"
         },
         {
             "ap1Name": "number or geometry",
@@ -209,6 +231,13 @@
             "ap2Primary": false,
             "ap1ID": "3772d48e-67ee-4b6e-b9d7-53a4d232d05d",
             "ap2ID": "5989e922-7191-4677-8e2c-0be0e7dbd18b"
+        },
+        {
+            "ap1Name": "result",
+            "ap2Name": "zDist",
+            "ap2Primary": false,
+            "ap1ID": "cf4078dc-c37a-4aaa-be89-23fd3ad0d5fd",
+            "ap2ID": "ed59653c-284c-47c3-8d15-0a852be74b14"
         }
     ],
     "unitsKey": "MM",
