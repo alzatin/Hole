@@ -4,11 +4,213 @@
     "x": 0,
     "y": 0,
     "uniqueID": "3c8d21e1-b281-4fdc-b2ef-00cbe1553401",
-    "ioValues": [],
+    "ioValues": [
+        {
+            "name": "diameter",
+            "ioValue": 5
+        },
+        {
+            "name": "length",
+            "ioValue": 10
+        },
+        {
+            "name": "x",
+            "ioValue": 0
+        },
+        {
+            "name": "y",
+            "ioValue": 0
+        }
+    ],
     "description": "Molecules provide an organizational structure to contain atoms. Double click on a molecule to enter it. Use the up arrow in the upper right hand corner of the screen to go up one level.",
     "topLevel": true,
-    "allAtoms": [],
-    "allConnectors": [],
+    "allAtoms": [
+        {
+            "atomType": "Output",
+            "name": "Output",
+            "x": 0.98,
+            "y": 0.5,
+            "uniqueID": "5989e922-7191-4677-8e2c-0be0e7dbd18b",
+            "ioValues": [
+                {
+                    "name": "number or geometry",
+                    "ioValue": "3772d48e-67ee-4b6e-b9d7-53a4d232d05d"
+                }
+            ],
+            "description": "Connect geometry here to make it available in the next level up. "
+        },
+        {
+            "atomType": "Input",
+            "name": "diameter",
+            "x": 0.0231,
+            "y": 0.2680722891566265,
+            "uniqueID": "6c84e38c-e419-48c6-b4c4-034c25b64542",
+            "ioValues": [],
+            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+            "type": "number"
+        },
+        {
+            "atomType": "Input",
+            "name": "length",
+            "x": 0.0231,
+            "y": 0.39759036144578314,
+            "uniqueID": "be99203a-9a51-4cae-893a-0e4f60162b78",
+            "ioValues": [],
+            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+            "type": "number"
+        },
+        {
+            "atomType": "Input",
+            "name": "x",
+            "x": 0.0231,
+            "y": 0.5903614457831325,
+            "uniqueID": "43cb877b-e548-47b5-80de-c38127d79056",
+            "ioValues": [],
+            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+            "type": "number"
+        },
+        {
+            "atomType": "Input",
+            "name": "y",
+            "x": 0.0231,
+            "y": 0.7409638554216867,
+            "uniqueID": "1045cb25-e7ed-4206-93e6-878cf581f05e",
+            "ioValues": [],
+            "description": "Adds an input to the parent molecule. If the parent molecule is the top level of the project then the input will be available when the project is shared or imported into another project. Name is editable",
+            "type": "number"
+        },
+        {
+            "atomType": "Circle",
+            "name": "Circle",
+            "x": 0.26265389876880985,
+            "y": 0.23493975903614459,
+            "uniqueID": "4f429700-7bdb-4565-9ce5-d02640ecf710",
+            "ioValues": [
+                {
+                    "name": "diameter",
+                    "ioValue": 5
+                }
+            ],
+            "description": "Creates a new circle."
+        },
+        {
+            "atomType": "Extrude",
+            "name": "Extrude",
+            "x": 0.4445964432284542,
+            "y": 0.3283132530120482,
+            "uniqueID": "14f9abf2-1845-4a68-9688-50852ce4441d",
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "4f429700-7bdb-4565-9ce5-d02640ecf710"
+                },
+                {
+                    "name": "height",
+                    "ioValue": 10
+                }
+            ],
+            "description": "Extrudes a 2D shape. Input can be negitive. "
+        },
+        {
+            "atomType": "Move",
+            "name": "Move",
+            "x": 0.5909712722298222,
+            "y": 0.5030120481927711,
+            "uniqueID": "ed59653c-284c-47c3-8d15-0a852be74b14",
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "14f9abf2-1845-4a68-9688-50852ce4441d"
+                },
+                {
+                    "name": "xDist",
+                    "ioValue": 0
+                },
+                {
+                    "name": "yDist",
+                    "ioValue": 0
+                },
+                {
+                    "name": "zDist",
+                    "ioValue": 0
+                }
+            ],
+            "description": "Moves a shape laterally in X, Y, Z."
+        },
+        {
+            "atomType": "Color",
+            "name": "Color",
+            "x": 0.7428180574555403,
+            "y": 0.680722891566265,
+            "uniqueID": "3772d48e-67ee-4b6e-b9d7-53a4d232d05d",
+            "ioValues": [
+                {
+                    "name": "geometry",
+                    "ioValue": "ed59653c-284c-47c3-8d15-0a852be74b14"
+                }
+            ],
+            "description": "Changes the color of the shape.",
+            "selectedColorIndex": 22
+        }
+    ],
+    "allConnectors": [
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "diameter",
+            "ap2Primary": false,
+            "ap1ID": "6c84e38c-e419-48c6-b4c4-034c25b64542",
+            "ap2ID": "4f429700-7bdb-4565-9ce5-d02640ecf710"
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "height",
+            "ap2Primary": false,
+            "ap1ID": "be99203a-9a51-4cae-893a-0e4f60162b78",
+            "ap2ID": "14f9abf2-1845-4a68-9688-50852ce4441d"
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "xDist",
+            "ap2Primary": false,
+            "ap1ID": "43cb877b-e548-47b5-80de-c38127d79056",
+            "ap2ID": "ed59653c-284c-47c3-8d15-0a852be74b14"
+        },
+        {
+            "ap1Name": "number or geometry",
+            "ap2Name": "yDist",
+            "ap2Primary": false,
+            "ap1ID": "1045cb25-e7ed-4206-93e6-878cf581f05e",
+            "ap2ID": "ed59653c-284c-47c3-8d15-0a852be74b14"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": "4f429700-7bdb-4565-9ce5-d02640ecf710",
+            "ap2ID": "14f9abf2-1845-4a68-9688-50852ce4441d"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": "14f9abf2-1845-4a68-9688-50852ce4441d",
+            "ap2ID": "ed59653c-284c-47c3-8d15-0a852be74b14"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "geometry",
+            "ap2Primary": true,
+            "ap1ID": "ed59653c-284c-47c3-8d15-0a852be74b14",
+            "ap2ID": "3772d48e-67ee-4b6e-b9d7-53a4d232d05d"
+        },
+        {
+            "ap1Name": "geometry",
+            "ap2Name": "number or geometry",
+            "ap2Primary": false,
+            "ap1ID": "3772d48e-67ee-4b6e-b9d7-53a4d232d05d",
+            "ap2ID": "5989e922-7191-4677-8e2c-0be0e7dbd18b"
+        }
+    ],
     "unitsKey": "MM",
     "fileTypeVersion": 1,
     "compiledBom": {},
