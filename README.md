@@ -4,6 +4,14 @@
 
 ![](/project.svg)
 
+## Inputs
+
+- **diameter** (number)
+- **length** (number)
+- **x** (number)
+- **y** (number)
+
+
 
 
  
